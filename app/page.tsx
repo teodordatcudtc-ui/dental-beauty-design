@@ -101,12 +101,24 @@ export default function HomePage() {
     <>
       {/* ── HERO ─────────────────────────────────────────────── */}
       <section className="relative min-h-screen bg-white flex items-center overflow-hidden diagonal-bottom">
-        {/* Background decorative elements */}
-        <div className="absolute inset-0 pointer-events-none">
+
+        {/* MOBILE: poza ca fundal + overlay întunecat */}
+        <div className="absolute inset-0 lg:hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&h=1100&fit=crop&q=80"
+            alt=""
+            fill
+            className="object-cover object-center"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-plum-deep/75 via-plum-deep/65 to-plum-deep/85" />
+        </div>
+
+        {/* DESKTOP: elemente decorative (blob-uri, grid) */}
+        <div className="absolute inset-0 pointer-events-none hidden lg:block">
           <div className="absolute -top-32 -right-32 w-[700px] h-[700px] rounded-full bg-brand-pink/8 blur-3xl" />
           <div className="absolute -bottom-20 -left-20 w-[500px] h-[500px] rounded-full bg-brand-purple/6 blur-3xl" />
           <div className="absolute top-1/2 right-0 w-[400px] h-[400px] rounded-full bg-brand-mint/20 blur-3xl" />
-          {/* Subtle grid */}
           <div
             className="absolute inset-0 opacity-[0.03]"
             style={{
@@ -115,16 +127,16 @@ export default function HomePage() {
               backgroundSize: "80px 80px",
             }}
           />
-          {/* Diagonal accent lines */}
           <div className="absolute top-0 right-1/4 w-px h-full bg-gradient-to-b from-transparent via-brand-pink/15 to-transparent rotate-12" />
           <div className="absolute top-0 left-1/3 w-px h-full bg-gradient-to-b from-transparent via-brand-pink/8 to-transparent -rotate-6" />
         </div>
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-[1.15fr,0.85fr] gap-10 items-center pt-28 pb-32">
-          {/* Left: Typography – mai la stânga */}
+          {/* Left: Typography */}
           <div className="lg:pr-4">
             <h1 className="font-playfair leading-[1.02] mb-6">
-              <span className="block text-[clamp(3rem,8vw,5.5rem)] font-bold text-plum-deep">
+              {/* mobil: alb | desktop: negru */}
+              <span className="block text-[clamp(3rem,8vw,5.5rem)] font-bold text-white lg:text-plum-deep">
                 Dental Beauty
               </span>
               <span className="block text-[clamp(3rem,8vw,5.5rem)] font-bold text-gradient-pink">
@@ -132,7 +144,7 @@ export default function HomePage() {
               </span>
             </h1>
 
-            <p className="text-plum-deep/60 text-lg max-w-lg mb-10 leading-relaxed">
+            <p className="text-white/80 lg:text-plum-deep/60 text-lg max-w-lg mb-10 leading-relaxed">
               Zâmbetul tău, expertiza noastră. Medicina dentară modernă
               întâlnește arta estetică — pentru un zâmbet care inspiră
               încredere.
@@ -143,7 +155,11 @@ export default function HomePage() {
                 Programare gratuită
                 <ArrowRight size={16} />
               </Link>
-              <Link href="/servicii" className="btn-outline-dark">
+              {/* mobil: outline alb | desktop: outline roz */}
+              <Link
+                href="/servicii"
+                className="inline-flex items-center gap-2 border-2 border-white text-white lg:border-brand-pink lg:text-brand-pink px-8 py-4 rounded-full font-medium text-sm tracking-widest uppercase transition-all duration-300 hover:bg-brand-pink hover:border-brand-pink hover:text-white hover:-translate-y-0.5"
+              >
                 Servicii
               </Link>
             </div>
@@ -159,7 +175,7 @@ export default function HomePage() {
                   <div className="font-playfair text-3xl font-bold text-brand-pink">
                     {s.val}
                   </div>
-                  <div className="text-plum-deep/40 text-xs tracking-wide mt-0.5">
+                  <div className="text-white/50 lg:text-plum-deep/40 text-xs tracking-wide mt-0.5">
                     {s.label}
                   </div>
                 </div>
