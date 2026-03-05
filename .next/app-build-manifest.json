@@ -1,0 +1,76 @@
+{
+  "pages": {
+    "/not-found": [
+      "static/chunks/webpack-4b88000ef3ec3abb.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-89259d33846f2778.js",
+      "static/chunks/main-app-350b85d8f49fa0c1.js",
+      "static/chunks/231-a78dca660677d6d3.js",
+      "static/chunks/app/not-found-f40a48aa3b0f1e61.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack-4b88000ef3ec3abb.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-89259d33846f2778.js",
+      "static/chunks/main-app-350b85d8f49fa0c1.js",
+      "static/chunks/app/_not-found/page-08e30a8f39fecb72.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-4b88000ef3ec3abb.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-89259d33846f2778.js",
+      "static/chunks/main-app-350b85d8f49fa0c1.js",
+      "static/css/21af8e3b4461b1b6.css",
+      "static/chunks/231-a78dca660677d6d3.js",
+      "static/chunks/app/layout-4b6b76ff12aa0555.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-4b88000ef3ec3abb.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-89259d33846f2778.js",
+      "static/chunks/main-app-350b85d8f49fa0c1.js",
+      "static/chunks/231-a78dca660677d6d3.js",
+      "static/chunks/173-b5e583330e996812.js",
+      "static/chunks/app/page-8bc53fd95b0e6a3d.js"
+    ],
+    "/galerie/page": [
+      "static/chunks/webpack-4b88000ef3ec3abb.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-89259d33846f2778.js",
+      "static/chunks/main-app-350b85d8f49fa0c1.js",
+      "static/chunks/231-a78dca660677d6d3.js",
+      "static/chunks/173-b5e583330e996812.js",
+      "static/chunks/app/galerie/page-e094916811486de7.js"
+    ],
+    "/despre-noi/page": [
+      "static/chunks/webpack-4b88000ef3ec3abb.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-89259d33846f2778.js",
+      "static/chunks/main-app-350b85d8f49fa0c1.js",
+      "static/chunks/231-a78dca660677d6d3.js",
+      "static/chunks/app/despre-noi/page-aec4cd5929cfa39b.js"
+    ],
+    "/servicii/page": [
+      "static/chunks/webpack-4b88000ef3ec3abb.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-89259d33846f2778.js",
+      "static/chunks/main-app-350b85d8f49fa0c1.js",
+      "static/chunks/231-a78dca660677d6d3.js",
+      "static/chunks/app/servicii/page-389c116aa8549e72.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack-4b88000ef3ec3abb.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-89259d33846f2778.js",
+      "static/chunks/main-app-350b85d8f49fa0c1.js",
+      "static/chunks/app/contact/page-37c3f699e5d11f1e.js"
+    ],
+    "/contact/layout": [
+      "static/chunks/webpack-4b88000ef3ec3abb.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-89259d33846f2778.js",
+      "static/chunks/main-app-350b85d8f49fa0c1.js",
+      "static/chunks/app/contact/layout-f46949d1f5386bae.js"
+    ]
+  }
+}
